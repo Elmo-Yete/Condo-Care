@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condo-Care</title>
+
+    <!-- Primero las hojas de estilo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Luego los scripts -->
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sky: "#4FABD2",
+              background: "#242424",
+              second: "#4E4E4E",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background flex text-white">
+    <header class="bg-second flex flex-col items-center h-[874px] w-[120px]">
+      <div class="bg-sky container">
+        <h1 class="text-white text-6xl font-bold p-6 text-center barlow">CC</h1>
+      </div>
+      <div class="w-fit flex flex-col items-center justify-between mt-8 h-full">
+        <a href="https://www.instagram.com/">
+          <img
+            src="./assets/instagram.png"
+            alt="instagram logo"
+            class="w-fit"
+          />
+        </a>
+        <div class="flex flex-col items-center justify-center">
+          <img src="./assets/correo@gmail.com.svg" alt="email" class="mb-5" />
+          <img src="./assets/email-icon.png" alt="email-icon" class="mb-3" />
+        </div>
+      </div>
+    </header>
+    <nav
+      class="flex justify-around items-center p-3 w-screen text-2xl font-light h-[100px] text-center"
+    >
+      <div>
+        <p class="bg-second rounded-xl p-3 poppins">Condo Care</p>
+      </div>
+      <div class="flex justify-between gap-8">
+        <p>Home</p>
+        <p>Acerca de</p>
+        <p>Contacto</p>
+        <span class="flex">
+          <img src="./assets/Phone.png" alt="phone-icon" />
+          <p>+52 552364 2588</p>
+        </span>
+      </div>
+    </nav>
+  </body>
+</html>
