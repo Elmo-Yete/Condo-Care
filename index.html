@@ -64,22 +64,35 @@
           </div>
         </div>
       </header>
-      <nav
-        class="flex justify-around items-center p-3 w-screen text-2xl font-light h-[100px] text-center"
-      >
-        <div>
-          <p class="bg-second rounded-xl p-3 poppins">Condo Care</p>
-        </div>
-        <div class="flex justify-between gap-8">
-          <p>Home</p>
-          <p>Acerca de</p>
-          <p>Contacto</p>
-          <span class="flex">
-            <img src="./assets/Phone.png" alt="phone-icon" />
-            <p>+52 552364 2588</p>
+      <div class="flex flex-col items-end">
+        <nav
+          class="flex justify-around items-center p-3 w-screen text-2xl font-light h-[100px] text-center"
+        >
+          <div>
+            <p class="bg-second rounded-xl p-3 poppins">Condo Care</p>
+          </div>
+          <div class="flex justify-between gap-8">
+            <p>Home</p>
+            <p>Acerca de</p>
+            <p>Contacto</p>
+            <span class="flex">
+              <img src="./assets/Phone.png" alt="phone-icon" />
+              <p>+52 552364 2588</p>
+            </span>
+          </div>
+        </nav>
+        <div class="flex items-center justify-start">
+          <span class="text-4xl font-bold text-start">
+            <h2 class="m-0">Especialistas en Condominios y Departamentos</h2>
+            <p class="text-3xl font-light m-0">
+              Tu tranquilidad nuestra prioridad
+            </p>
+          </span>
+          <span>
+            <img src="./assets/image 5.png" alt="" class="" />
           </span>
         </div>
-      </nav>
+      </div>
     </section>
 
     <section class="flex bg-second gap-20 p-10">
@@ -110,14 +123,15 @@
 
     <section
       class="bg-second flex flex-col justify-center items-center py-16 gap-10"
-      id="services"
     >
       <h3 class="text-4xl font-semibold">Nuestros servicios</h3>
       <div class="flex gap-20 text-3xl">
-        <button>Condominio</button>
-        <button>Departamento</button>
+        <button onclick="mostrarServicio('condominio')">Condominio</button>
+        <button onclick="mostrarServicio('departamento')">Departamento</button>
       </div>
     </section>
+
+    <section id="services"></section>
 
     <section class="p-5 mt-8">
       <div class="flex justify-between">
@@ -162,6 +176,9 @@
           ></textarea>
         </span>
       </article>
+      <button class="bg-sky p-3 font-semibold poppins rounded-lg w-56">
+        Enviar
+      </button>
     </section>
     <footer class="bg-second flex justify-center poppins">
       <p>Designed by Damian</p>
