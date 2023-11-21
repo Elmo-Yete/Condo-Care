@@ -81,11 +81,14 @@
         </div>
       </nav>
     </section>
-    <section class="flex bg-second">
-      <img src="./assets//Group 1.png" alt="" />
-      <div>
+
+    <section class="flex bg-second gap-20 p-10">
+      <div class="w-[40rem]">
+        <img src="./assets//Group 1.png" alt="" class="w-full" />
+      </div>
+      <div class="w-2/3 flex flex-col gap-10">
         <h3 class="font-bold text-4xl">Acerca de nosotros</h3>
-        <p>
+        <p class="text-3xl font-light">
           CondoCare es una empresa líder en el campo de la administración y
           mantenimiento de condominios y departamentos, comprometida con la
           excelencia en el cuidado y gestión de propiedades. Nuestra misión es
@@ -96,102 +99,55 @@
           aspectos para asegurar que su propiedad esté siempre en condiciones
           óptimas, lo que incluye:
         </p>
-        <ul>
-          <li>Comunicacion transparente</li>
-          <li>Gestion Financiera</li>
-          <li>Mantenimiento preventivo</li>
-          <li>Seguridad</li>
+        <ul class="list-disc text-3xl font-light list-inside gap-10">
+          <li class="mb-4">Comunicacion transparente</li>
+          <li class="mb-4">Gestion Financiera</li>
+          <li class="mb-4">Mantenimiento preventivo</li>
+          <li class="mb-4">Seguridad</li>
         </ul>
       </div>
     </section>
 
-    <section class="flex flex-col bg-second justify-center items-center gap-10">
-      <h3>Nuestros servicios</h3>
-      <div class="flex gap-5">
-        <p>Condominio</p>
-        <p>Departamento</p>
-      </div>
-      <div class="bg-background flex rounded-xl">
-        <img src="./assets/Condominio.png" alt="" />
-        <span>
-          <h4>Administración</h4>
-          <p class="flex-wrap">
-            Mantener en perfecto estado las áreas comunes del condominio y
-            vigilar que el reglamento de condóminos se cumpla al pie de la letra
-          </p>
-        </span>
-      </div>
-      <h3>Con 3 divisiones fundamentales</h3>
-      <div class="bg-background flex rounded-xl">
-        <span>
-          <h4>Administrador</h4>
-          <p>
-            El responsable de todo lo que pase en el condominio, de estar en
-            constante comunicación con los condóminos sobre los eventos
-            relevantes de las torres en cuestión de mantenimiento y de la
-            administración financiera y contable de las cuotas de mantenimiento.
-          </p>
-        </span>
-        <img
-          src="./assets/estudiante-afroamericano-ocupado-hace-investigacion-habla-companero-grupo-telefono-celular-tiene-documentos 2.png"
-          alt=""
-        />
-      </div>
-      <div class="bg-background flex rounded-xl">
-        <img src="./assets/Dots2.png" alt="" />
-        <span>
-          <h4>Encargado de mantenimiento</h4>
-          <p>
-            Limpieza de torres , albercas ,mantenimiento de jardines y el
-            correcto funcionamiento de los hidráulicos de agua potable y luz,
-            son una de las principales funciones del encargado, asi como la
-            recolección de basura , albañilería y pintado del condominio
-          </p>
-        </span>
-        <img src="./assets/Dots2.png" alt="" />
-      </div>
-      <div class="bg-background flex rounded-xl">
-        <img
-          src="./assets/hombre-negocios-vista-lateral-calcular-numeros-finanzas 2.png"
-          alt=""
-        />
-        <span>
-          <h4>Finanzas</h4>
-          <p>
-            Llevar la contabilidad de las cuotas de mantenimiento, es decir un
-            registro de los ingresos y egresos, pago de nómina, pago de
-            impuestos, tramite ante las autoridades correspondientes,
-            elaboración de estados financieros y reportes trimestrales al
-            Administrador General, al Comité de Vigilancia y a los Condóminos.
-          </p>
-        </span>
+    <section
+      class="bg-second flex flex-col justify-center items-center py-16 gap-10"
+      id="services"
+    >
+      <h3 class="text-4xl font-semibold">Nuestros servicios</h3>
+      <div class="flex gap-20 text-3xl">
+        <button>Condominio</button>
+        <button>Departamento</button>
       </div>
     </section>
-    <section class="bg-background">
+
+    <section class="p-5 mt-8">
       <div class="flex justify-between">
-        <h1>Contacto</h1>
+        <h1
+          class="text-5xl font-bold underline underline-offset-8 underline-sky"
+        >
+          Contacto
+        </h1>
         <div class="flex gap-10">
-          <span class="flex gap-2">
-            <img src="./assets/Phone-blue.png" alt="" />
-            <p>+525587985211</p>
+          <span class="flex gap-2 items-center">
+            <img src="./assets/Phone-blue.png" alt="" class="h-fit" />
+            <p class="text-center">+525587985211</p>
           </span>
-          <span class="flex">
-            <img src="./assets/Email-blue.png" alt="" />
-            <p>correo@gmail.com</p>
+          <span class="flex gap-2 items-center">
+            <img src="./assets/Email-blue.png" alt="" class="h-fit" />
+            <p class="text-center">correo@gmail.com</p>
           </span>
         </div>
       </div>
-      <article class="flex flex-col w-96">
-        <div class="flex gap-10">
+      <article class="flex flex-col gap-8 mt-8">
+        <div class="flex gap-10 w-full">
           <input
             type="text"
             placeholder="Nombre"
-            class="bg-second p-3 rounded-lg focus:border-none"
+            class="bg-second p-3 rounded-lg focus:border-none w-1/2"
           />
           <input
             type="email"
             placeholder="Email"
-            class="bg-second p-3 rounded-lg focus:border-none"
+            class="bg-second p-3 rounded-lg focus:border-none w-1/2"
           />
         </div>
         <input
@@ -207,5 +163,8 @@
         </span>
       </article>
     </section>
+    <footer class="bg-second flex justify-center poppins">
+      <p>Designed by Damian</p>
+    </footer>
   </body>
 </html>
