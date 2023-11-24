@@ -134,7 +134,7 @@ function mostrarServicio(tipo) {
       <img src="./assets/Long.png" alt="" />
       <div class="bg-background rounded-lg w-2/3 text-center p-10">
         <h4 class="text-3xl font-bold">Que incluye el mantenimiento?</h4>
-        <ul class="list-disc list-inside flex flex-col gap-5 text-2xl text-start">
+        <ul class="list-disc list-inside flex flex-col gap-12 text-2xl text-start">
           <li>Infraestructura necesaria para mantener funcionando tu departamento, en esto se incluye:</li>
           <li class="ml-6">Especialistas en cada área para reparaciones necesarias</li>
           <li class="ml-6">Programas de mantenimiento preventivo</li>
